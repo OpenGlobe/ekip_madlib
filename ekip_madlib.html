@@ -102,7 +102,10 @@ and leave only footprints.  I can’t wait for my next trip! </p>
   <h4>You did it!</h4>
   <a href="https://kids.18f.gov">Click here to get your pass</a>!
 </div>
- 
+ <div id = "custom-tag"> </div>
+
+
+
     </div>
     
     <footer class="footer">
@@ -181,19 +184,19 @@ $('#mad8').on('change', function() {
     if (!done8) {
         $("#progressBar").prop('value', $("#progressBar").attr('value')+14);
         done8 = true;
-         <div class="alert alert-success">
-         <button type="button" class="close" data-dismiss="alert">&times;</button>
-         <h4>You did it!</h4>
-         <a href="https://kids.18f.gov">Click here to get your pass</a>!
-         </div>
     }
 });
-
-
 
 //]]> 
 
 </script>
 
+<script>
+    if (done8 = true){
+        $('#custom-tag').html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button><h4>You did it!</h4><a href="https://kids.18f.gov">Click here to get your pass</a>!</div>');
+    } else {
+        $('#custom-tag').html('<p>You're not done yet</p>');
+    }
+</script>
   </body>
 </html>
