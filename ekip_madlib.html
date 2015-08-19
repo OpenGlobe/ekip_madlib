@@ -128,7 +128,7 @@ $('#mad1').on('change', function() {
 var done2 = false;
 $('#mad2').on('change', function() {
     if (!done2) {
-        $("#progressBar").prop('value', $("#progressBar").attr('value')+14);
+        $("#progressBar").prop('value', $("#progressBar").prop('value')+14);
         done2 = true;
     }
 });
@@ -136,7 +136,7 @@ $('#mad2').on('change', function() {
 var done3 = false;
 $('#mad3').on('change', function() {
     if (!done3) {
-        $("#progressBar").prop('value', $("#progressBar").attr('value')+14);
+        $("#progressBar").prop('value', $("#progressBar").prop('value')+14);
         done3 = true;
     }
 });
