@@ -20,6 +20,73 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+      <script type='text/javascript'>
+      var done1 = false;
+$('#mad1').on('change', function() {
+    if (!doneA) {
+        $("#progressBar").attr('value', $("#progressBar").prop('value')+50);
+        doneA = true;
+    }
+}); 
+
+var done2 = false;
+$('#mad2').on('change', function() {
+    if (!doneB) {
+        $("#progressBar").prop('value', $("#progressBar").attr('value')+50);
+        doneB = true;
+    }
+});
+
+var done3 = false;
+$('#mad3').on('change', function() {
+    if (!doneB) {
+        $("#progressBar").prop('value', $("#progressBar").attr('value')+50);
+        doneB = true;
+    }
+});
+
+var done4 = false;
+$('#mad4').on('change', function() {
+    if (!doneB) {
+        $("#progressBar").prop('value', $("#progressBar").attr('value')+50);
+        doneB = true;
+    }
+});
+
+var done5 = false;
+$('#mad5').on('change', function() {
+    if (!doneB) {
+        $("#progressBar").prop('value', $("#progressBar").attr('value')+50);
+        doneB = true;
+    }
+});
+
+var done6 = false;
+$('#mad6').on('change', function() {
+    if (!doneB) {
+        $("#progressBar").prop('value', $("#progressBar").attr('value')+50);
+        doneB = true;
+    }
+});
+
+var done7 = false;
+$('#ma7').on('change', function() {
+    if (!doneB) {
+        $("#progressBar").prop('value', $("#progressBar").attr('value')+50);
+        doneB = true;
+    }
+});
+
+var done8 = false;
+$('#mad8').on('change', function() {
+    if (!doneB) {
+        $("#progressBar").prop('value', $("#progressBar").attr('value')+50);
+        doneB = true;
+    }
+});
+
+      </script>
   </head>
   <body>
     
@@ -32,28 +99,28 @@
       </div>
       <p class="lead">Dear Diary - </p>
     <p>This year has been great! I used my free pass to explore America.  I was a little nervous at first because I’d never been to a national 
-<select>
+<select id="mad1">
   <option value="blank"> </option>
   <option value="park">park</option>
   <option value="forest">forest</option>
   <option value="wildlife_refuge">wildlife refuge</option>
   <option value="seashore">seashore</option>
 </select>.  Wow, was I surprised!  There is so much to see and do.  I felt like I was traveling back in time when my class visited 
-<select>
+<select id="mad2">
     <option value="blank"> </option>
   <option value="Abraham Lincoln">Abraham Lincoln</option>
   <option value="Harriet Tubman">Harriet Tubman</option>
   <option value="Benjamin Franklin">Benjamin Franklin</option>
   <option value="Martin Luther King, Jr.">Martin Luther King, Jr.</option>
 </select>'s house on a school field trip.  Over spring break I went
-<select>
+<select id="mad3">
     <option value="blank"> </option>
   <option value="hiking">hiking</option>
   <option value="camping">camping</option>
   <option value="canoeing">canoeing</option>
   <option value="rock climbing.">rock climbing</option>
 </select> with my scout troop and got to touch a 
-<select>
+<select id="mad4">
     <option value="blank"> </option>
   <option value="dinosaur_fossil">dinosaur fossil</option>
   <option value="star_fish">star fish</option>
@@ -61,13 +128,13 @@
   <option value="banana slug">banana slug</option>
 </select> 
 I learned that you can identify animals by their 
-<select>
+<select id="mad5">
     <option value="blank"> </option>
   <option value="paw_prints">paw prints</option>
   <option value="sounds">sounds</option>
   <option value="poop">poop</option>
 </select>  On the weekend my friend and I went to the park near our city and 
-<select>
+<select id="mad6">
     <option value="blank"> </option>
   <option value="walk">went on a nature walk</option>
   <option value="took pictures">took pictures</option>
@@ -75,7 +142,7 @@ I learned that you can identify animals by their
   <option value="climbed a fort">climbed a fort</option>
 </select>
 . I found out that I can use my pass to see amazing things like 
-<select>
+<select id="mad7">
     <option value="blank"> </option>
   <option value="active_volcanos">active volcanos</option>
   <option value="labs">Scientists’ Laboratories</option>
@@ -84,7 +151,7 @@ I learned that you can identify animals by their
 </select>
 .  The best part is all these cool places belong to me!  America’s national parks, public lands and waters belong to all of us, and it’s up to us to take care of them.  
 So when I visit, I take only
-<select>
+<select id="mad8">
     <option value="blank"> </option>
   <option value="memories">memories</option>
   <option value="photos">photos</option>
@@ -93,10 +160,6 @@ and leave only footprints.  I can’t wait for my next trip! </p>
  
  <p>Progress: </p>
  <progress id='progressBar' max='100' value='0'></progress>
- 
- <p><div class="progress progress-striped active">
- <progress id='progressBar' max='100' value='0'></progress>
-</div></p>
  
 <p>Get your free pass you can explore America too!
 
