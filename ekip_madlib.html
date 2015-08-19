@@ -23,6 +23,17 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
  
+   <style type='text/css'>
+    .container {
+    position: relative;
+}
+#clip {
+    position: absolute;
+    clip: rect(0, 100px, 200px, 0);
+    /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
+}
+  </style>
+ 
   </head>
   <body>
     
@@ -99,7 +110,9 @@ and leave only footprints.  I can’t wait for my next trip! </p>
 
  <div id = "complete"> </div>
 
-
+<div class="container">
+    <img id="clip" src="http://lorempixel.com/200/200/nightlife/3" />
+</div>
 
     </div>
 <!-- 
